@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Tommy Website">
@@ -10,31 +10,45 @@
     <meta property="og:type" content="website">
     <meta property="fb:app_id" content="1245016886587008">
     <meta name="google-site-verification" content="pwKvYalfLxSFwpDlCsan4yS_mEsUdJvUDrI2wKiIHXk">
-    
+
     <title>Tommy Website</title>
 
     <!-- CSS -->
     <link rel="preload" href="style.css" as="style">
     <link rel="preload" href="customfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.style.display = "block"; 
+            
+        });
+    </script>
+    
+    <style>
+        body { display: none; } 
+    </style>
 </head>
-<body>
-    <noscript>Aktifkan JavaScript untuk melihat konten.</noscript>
+  <body>
 
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=blocked.html">
+    </noscript>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             let elem = document.createElement("div");
             elem.innerHTML = `
-
+               
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Font Face -->
+
       <style>
-        
+      
         body {
             font-family: 'CustomFont', 'Arial', 'Segoe UI', 'Noto Sans', sans-serif;
             background: ;
@@ -408,7 +422,8 @@
         gtag('js', new Date());
         gtag('config', 'G-FK1EY26W82');
             </script>
-      
+            
+    </head>
       <body>
         <div class="container">
           <div class="profile-name">
@@ -7400,17 +7415,15 @@ $(function() {
     new ClipboardJS('.copybutton');
   });
 });
-</script>
 
- <script>
-$(function(){
-var intv = setInterval(function(){ $(".copybutton").html('Copy'); }, 2000);
-  $("body").on('click',".copybutton",function() { 
-$(".copybutton").html('Copy');
-$(this).html('Copied'); 
-clearInterval(intv);
-});
-});
+    $(function(){
+    var intv = setInterval(function(){ $(".copybutton").html('Copy'); }, 2000);
+      $("body").on('click',".copybutton",function() { 
+    $(".copybutton").html('Copy');
+    $(this).html('Copied'); 
+    clearInterval(intv);
+    });
+    });
 
     var clipboard = new ClipboardJS('.copybutton');
     clipboard.on('success', function(e) {
@@ -7430,29 +7443,14 @@ clearInterval(intv);
         document.getElementById("overlay").style.display = "none";
         document.getElementById("notes").style.display = "none";
     }
-  </script>
+    </script>
+    <script>
 
 
-                <script>
-                    console.log('JavaScript berjalan');
-                <\/script>
             `;
             document.body.appendChild(elem);
         });
     </script>
-<script>
-// Mencegah klik kanan
-document.addEventListener("contextmenu", event => event.preventDefault());
 
-// Mencegah tombol shortcut untuk membuka DevTools
-document.addEventListener("keydown", function(event) {
-    if (event.keyCode == 123 ||  // F12
-        (event.ctrlKey && event.shiftKey && (event.keyCode == 73 || event.keyCode == 74)) ||  // Ctrl+Shift+I / Ctrl+Shift+J
-        (event.ctrlKey && event.keyCode == 85)) {  // Ctrl+U (View Source)
-        event.preventDefault();
-    }
-});
-
-</script>
 </body>
 </html>
