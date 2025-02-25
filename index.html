@@ -7441,5 +7441,31 @@ clearInterval(intv);
 </head>
 <body>
     <noscript>Aktifkan JavaScript untuk melihat konten.</noscript>
+<script>
+// Mencegah klik kanan
+document.addEventListener("contextmenu", event => event.preventDefault());
+
+// Mencegah tombol shortcut untuk membuka DevTools
+document.addEventListener("keydown", function(event) {
+    if (event.keyCode == 123 ||  // F12
+        (event.ctrlKey && event.shiftKey && (event.keyCode == 73 || event.keyCode == 74)) ||  // Ctrl+Shift+I / Ctrl+Shift+J
+        (event.ctrlKey && event.keyCode == 85)) {  // Ctrl+U (View Source)
+        event.preventDefault();
+    }
+});
+
+// Mencegah klik kanan
+document.addEventListener("contextmenu", event => event.preventDefault());
+
+// Mencegah tombol shortcut untuk membuka DevTools
+document.addEventListener("keydown", function(event) {
+    if (event.keyCode == 123 ||  // F12
+        (event.ctrlKey && event.shiftKey && (event.keyCode == 73 || event.keyCode == 74)) ||  // Ctrl+Shift+I / Ctrl+Shift+J
+        (event.ctrlKey && event.keyCode == 85)) {  // Ctrl+U (View Source)
+        event.preventDefault();
+    }
+});
+</script>
+
 </body>
 </html>
